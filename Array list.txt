@@ -1,0 +1,66 @@
+Array list
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> fruits = new ArrayList<>();
+        
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Orange");
+        
+        System.out.println("Fruits: " + fruits);
+        
+        // Accessing an element
+        String firstFruit = fruits.get(0);
+        System.out.println("First fruit: " + firstFruit);
+        
+        // Removing an element
+        fruits.remove("Banana");
+        System.out.println("Fruits after removing Banana: " + fruits);
+    }
+}
+
+
+
+import java.util.ArrayList;
+
+public class ArrayListExamples {
+    public static void main(String[] args) {
+        // Creating an ArrayList of integers
+        ArrayList<Integer> numbers = new ArrayList<>();
+        
+        // Adding elements
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        
+        // Accessing elements
+        int firstNumber = numbers.get(0);
+        System.out.println("First number: " + firstNumber);
+        
+        // Iterating through ArrayList
+        System.out.print("Numbers: ");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        
+        // Removing an element
+        numbers.remove(1); // Removes the element at index 1 (20)
+        System.out.println("Numbers after removing at index 1: " + numbers);
+        
+        // Checking if an element exists
+        boolean contains30 = numbers.contains(30);
+        System.out.println("Contains 30: " + contains30);
+        
+        // Size of the ArrayList
+        int size = numbers.size();
+        System.out.println("Size of ArrayList: " + size);
+        
+        // Clearing the ArrayList
+        numbers.clear();
+        System.out.println("Numbers after clearing: " + numbers);
+    }
+}
